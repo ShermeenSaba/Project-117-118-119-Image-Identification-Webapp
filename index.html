@@ -1,0 +1,61 @@
+<html>
+
+<head>
+  <title>Realtime Image Identification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+
+</head>
+
+<body
+  style="background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20190813/pngtree-islamic-new-year-background-with-mosque-image_289681.jpg); background-size: cover; text-align: center;">
+
+  <center>
+    <h3 style="font-family: 'Zen Tokyo Zoo', cursive; background-color: rgb(255, 0, 170); color: white;"
+      class="heading">
+      Realtime Image
+      Identification
+      <hr>
+      <center>
+        <div style="font-family:'Zen Tokyo Zoo', cursive;" class="col-lg-6 col-md-6 col-sm-6 col-xs-12 heading_div">
+          Model is trained on
+          <br>
+          <div style="font-family: 'Zen Tokyo Zoo', cursive;" class="heading_div2">
+            Necklace Set | Crown | High Heel | Eye Makeup | Flower
+          </div>
+        </div>
+      </center>
+    </h3>
+    <br><br>
+    <p style="background-color: rgb(255, 0, 170); border: ridge 3px white; width: 180px; color: white; font-family: 'Zen Tokyo Zoo', cursive;"
+      class="result_para_tag">
+      Object :
+      <span id="result_object_name"></span>
+    </p>
+
+    <p style="background-color: rgb(255, 0, 170); border: ridge 3px white; width: 180px; color: white; font-family: 'Zen Tokyo Zoo', cursive;"
+      class="result_para_tag">
+      Accuracy :
+      <span id="result_object_accuracy"></span>
+    </p>
+  </center>
+
+  <div style="font-family: 'Zen Tokyo Zoo', cursive;" class="copy_right_footer">
+    Developed with &#10084; by whitehat jr team
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
